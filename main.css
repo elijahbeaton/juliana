@@ -1,5 +1,5 @@
 :root{
-    --background: #FFFFFF;
+    --background: #e7e7e7;
     --foreground: #434343;
     --hightlight: #003399;
 }
@@ -23,7 +23,7 @@
 }
 
 * {
-  font-family: "Cormorant Garamond", "Times New Roman", "TimesNewRoman", "Times", sans-serif;
+  font-family: "Times New Roman", "TimesNewRoman", "Cormorant Garamond", "Times", sans-serif;
   color: var(--foreground);
   font-weight: lighter;
   letter-spacing: -0.15rem;
