@@ -48,18 +48,16 @@ body p{
 a{
     text-decoration: none;
     white-space: nowrap;
-    
-    
 }
 #text{
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2.5px;
     text-underline-offset: 8px;
     color: var(--hightlight);
 }
 a svg{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     fill: var(--hightlight); 
 }
 
@@ -69,5 +67,13 @@ a svg{
         font-size: 50px;
         display: revert;
         padding: 100px 0px;
+    }
+    a svg{
+        height: 25px;
+        width: 25px;
+    }
+    #text{
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
     }
 }
