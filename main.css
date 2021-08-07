@@ -53,10 +53,6 @@ a{
     transition-duration: 0.75s;
 }
 
-a:hover{
-    font-size: calc(60px + 10px);
-}
-
 @media (max-width: 900px){
     body{
         max-width: 90%;
