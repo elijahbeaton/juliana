@@ -50,11 +50,14 @@ a{
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
-    transition-duration: 0.75s;
+    white-space: nowrap;
+    
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     body{
         max-width: 90%;
+        display: revert;
+        padding: 100px 0px;
     }
 }
