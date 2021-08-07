@@ -60,6 +60,7 @@ a{
 a svg{
     height: 35px;
     width: 35px;
+    fill: var(--hightlight); 
 }
 
 @media (max-width: 1000px){
