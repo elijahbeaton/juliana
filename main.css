@@ -11,20 +11,38 @@
         --hightlight: #3d7af4;
     }
 }
+@font-face{
+    font-family: "Cormorant Garamond";
+        src: url(/assets/fonts/CormorantGaramond-Italic.ttf) format("truetype");
+    font-style: italic;
+}
+@font-face{
+    font-family: "Cormorant Garamond";
+        src: url(/assets/fonts/CormorantGaramond-Regular.ttf) format("truetype");
+    font-style: normal;
+}
 
 * {
-  font-family: "Times New Roman", "TimesNewRoman", "Times", sans-serif;
+  font-family: "Cormorant Garamond", "Times New Roman", "TimesNewRoman", "Times", sans-serif;
   color: var(--foreground);
   font-weight: lighter;
   letter-spacing: -0.15rem;
-  background: var(--background); 
+  background: var(--background);
+  height: 100%;
 }
 
 body{
   font-size: 60px;
+  width: 1000px;
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 100px 0px;
+  height: 100%;
+  display: table;
+  
+}
+body p{
+    display: table-cell;
+    vertical-align: middle;
+    
 }
 
 a{
@@ -32,9 +50,14 @@ a{
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
+    transition-duration: 0.75s;
 }
 
-@media (max-width: 1000px){
+a:hover{
+    font-size: calc(60px + 10px);
+}
+
+@media (max-width: 900px){
     body{
         max-width: 90%;
     }
