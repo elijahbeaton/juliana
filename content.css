@@ -73,4 +73,8 @@ a svg{
         text-decoration-thickness: 2px;
         text-underline-offset: 6px;
     }
+    #content{
+      border-style: none;
+      padding: 0px;
+    }
 }
