@@ -28,16 +28,20 @@
   font-weight: lighter;
   letter-spacing: -0.15rem;
   background: var(--background);
-  height: 100%;
 }
 
 body{
   font-size: 60px;
   width: 1000px;
   margin: 0 auto;
-  
+  padding: 50px;
 }
-
+#content{
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: var(--foreground); 
+  padding: 0px 50px 50px 50px;
+}
 
 a{
     text-decoration: none;
