@@ -37,18 +37,25 @@ body{
   width: 1000px;
   margin: 0 auto;
   
+  
 }
-.landing, .content {
+.landing{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: column;
+    
 }
 p{
-    margin: 20px 0;
+    margin: 0;
+    padding: 35px 0;
 }
-
 
 a{
     text-decoration: none;
@@ -62,3 +69,4 @@ a .arrow{
     font-family: "Arrows", sans-serif;
     font-size: calc(var(--font-size) * calc(2/3));
 }
+
