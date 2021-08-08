@@ -38,9 +38,9 @@ body{
 }
 .landing{
     height: 100vh;
-    display: table-cell;
-    vertical-align: middle;
-    
+     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
