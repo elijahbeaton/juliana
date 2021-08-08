@@ -2,6 +2,8 @@
     --background: #e7e7e7;
     --foreground: #434343;
     --hightlight: #003399;
+    --font-size: 60px;
+    --underline: calc(var(--font-size) * 0.075)
 }
 
 
@@ -12,6 +14,11 @@
          --hightlight: #3d7af4;
      }
 }
+@media (max-width: 1100px){
+    :root{
+        --font-size: 50px
+    }
+}
 
 @font-face{
     font-family: "Arrows";
@@ -19,24 +26,14 @@
     font-style: normal;
 }
 
-@font-face{
-    font-family: "Cormorant Garamond";
-        src: url(/assets/fonts/CormorantGaramond-Italic.ttf) format("truetype");
-    font-style: italic;
-}
-@font-face{
-    font-family: "Cormorant Garamond";
-        src: url(/assets/fonts/CormorantGaramond-Regular.ttf) format("truetype");
-    font-style: normal;
-}
-
 body{
-  font-family: "Times New Roman", "TimesNewRoman", "Cormorant Garamond", "Times", sans-serif;
+  font-family: "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
   color: var(--foreground);
   font-weight: lighter;
   letter-spacing: -0.15rem;
   background: var(--background);
-  font-size: 60px;
+  font-size: var(--font-size);
+  max-width: 90%;
   width: 1000px;
   margin: 0 auto;
   
@@ -52,26 +49,11 @@ a{
     text-decoration: none;
     white-space: nowrap;
     text-decoration: underline;
-    text-decoration-thickness: 2.5px;
-    text-underline-offset: 8px;
+    text-decoration-thickness: var(--underline);
+    text-underline-offset: calc(var(--underline) * 2);
     color: var(--hightlight);
 }
 a .arrow{
     font-family: "Arrows", sans-serif;
-    font-size: 30px;
-}
-
-@media (max-width: 1100px){
-    body{
-        max-width: 90%;
-        font-size: 50px;
-    }
-    a svg{
-        height: 25px;
-        width: 25px;
-    }
-    #text{
-        text-decoration-thickness: 2px;
-        text-underline-offset: 6px;
-    }
+    font-size: calc(var(--font-size) * calc(2/3));
 }
