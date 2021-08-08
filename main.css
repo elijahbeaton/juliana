@@ -38,12 +38,17 @@ body{
   margin: 0 auto;
   
 }
-.landing{
+.landing, .content {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+p{
+    margin: 20px 0;
+}
+
 
 a{
     text-decoration: none;
