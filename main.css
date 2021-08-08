@@ -7,6 +7,12 @@
 
 }
 @font-face{
+    font-family: "Arrows";
+        src: url(/assets/fonts/Arrows.ttf) format("truetype");
+    font-style: normal;
+}
+
+@font-face{
     font-family: "Cormorant Garamond";
         src: url(/assets/fonts/CormorantGaramond-Italic.ttf) format("truetype");
     font-style: italic;
