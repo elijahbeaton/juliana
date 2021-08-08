@@ -28,18 +28,16 @@
   font-weight: lighter;
   letter-spacing: -0.15rem;
   background: var(--background);
-  height: 100%;
 }
 
 body{
   font-size: 60px;
   width: 1000px;
   margin: 0 auto;
-  height: 100%;
-  display: table;
   
 }
-body p{
+.landing{
+    height: 100vh;
     display: table-cell;
     vertical-align: middle;
     
