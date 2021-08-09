@@ -36,7 +36,7 @@ body{
   max-width: 90%;
   width: 1000px;
   margin: 0 auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   
   
 }
