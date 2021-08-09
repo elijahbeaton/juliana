@@ -3,7 +3,7 @@
     --foreground: #434343;
     --hightlight: #003399;
     --font-size: 60px;
-    --underline: calc(var(--font-size) * 0.075)
+    --underline: calc(var(--font-size) * 0.06)
 }
 
 
@@ -67,6 +67,5 @@ a{
 }
 a .arrow{
     font-family: "Arrows", sans-serif;
-    font-size: calc(var(--font-size) * calc(2/3));
+    font-size: calc(var(--font-size) * 0.8);
 }
-
