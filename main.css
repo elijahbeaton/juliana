@@ -50,12 +50,8 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-flow: column;
-    
 }
 p{
-    margin: 0;
-    padding: 35px 0;
     scroll-snap-align: center;
 }
 
