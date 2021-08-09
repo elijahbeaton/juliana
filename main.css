@@ -36,9 +36,6 @@ body{
   max-width: 90%;
   width: 1000px;
   margin: 0 auto;
-  scroll-snap-type: y proximity;
-  
-  
 }
 .landing{
     height: 100vh;
@@ -50,9 +47,6 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-}
-p{
-    scroll-snap-align: center;
 }
 
 a{
