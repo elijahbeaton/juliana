@@ -38,15 +38,14 @@ body{
   margin: 0 auto;
 }
 .landing{
-    height: 100vh;
+    height: 80vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.content{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+#cv p, ul{
+    margin: 20px auto;
 }
 
 a{
@@ -61,3 +60,4 @@ a .arrow{
     font-family: "Arrows", sans-serif;
     font-size: calc(var(--font-size) * 0.8);
 }
+
