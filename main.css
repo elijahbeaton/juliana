@@ -56,8 +56,8 @@ a{
     text-underline-offset: calc(var(--underline) * 2);
     color: var(--hightlight);
 }
-a .arrow{
+a::after{
+    content: " ↗︎";
     font-family: "Arrows", sans-serif;
-    font-size: calc(var(--font-size) * 0.8);
+    font-size: calc(var(--font-size)*0.7); 
 }
-
