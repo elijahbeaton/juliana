@@ -40,6 +40,7 @@ body{
 .landing{
     height: 80vh;
     margin-top: 10vh;
+    margin-bottom: 6vh; 
     display: flex;
     justify-content: center;
     align-items: center;
