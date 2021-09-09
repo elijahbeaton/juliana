@@ -20,12 +20,6 @@
     }
 }
 
-@font-face{
-    font-family: "Arrows";
-        src: url(/assets/fonts/Arrows.ttf) format("truetype");
-    font-style: normal;
-}
-
 body{
   font-family: "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
   color: var(--foreground);
