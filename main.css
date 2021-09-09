@@ -64,7 +64,8 @@ a #text{
     border-bottom-width: var(--underline); 
 }
 a svg{
-    padding: 0 0 0 10px;
+    width: calc(var(--font-size) - calc(var(--font-size)/2.5));
+    height: auto;
     fill: currentcolor;
 }
 
