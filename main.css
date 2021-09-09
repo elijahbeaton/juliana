@@ -44,9 +44,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: .003;
+    -webkit-animation: FadeIn 1.3s forwards;
+    animation: FadeIn 1.3s forwards;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 #cv p, ul{
     margin: 20px auto;
+    opacity: .003;
+    -webkit-animation: FadeIn 1.3s forwards;
+    animation: FadeIn 1.3s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 a{
@@ -61,4 +71,23 @@ a::after{
     content: " ↗︎";
     font-family: "Arrows", sans-serif;
     font-size: calc(var(--font-size)*0.7); 
+}
+@-webkit-keyframes FadeIn {
+    0% {
+        opacity:.003
+    }
+
+    to {
+        opacity:1
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity:.003
+    }
+
+    to {
+        opacity:1
+    }
 }
