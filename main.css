@@ -20,15 +20,15 @@
     }
 }
 @font-face{
-    font-family: "Arrows";
-        src: url(/assets/fonts/Arrows.ttf) format("truetype");
+    font-family: "IBM";
+        src: url(/assets/fonts/IBMPlexSans-light.woff) format("woff");
     font-style: normal;
 }
 
 body{
   font-family: "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
   color: var(--foreground);
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: -0.15rem;
   background: var(--background);
   font-size: var(--font-size);
@@ -69,9 +69,8 @@ a #text{
     border-bottom-width: var(--underline); 
 }
 a #arrow{
-    font-family: "Arrows", sans-serif;
-    font-weight:bolder; 
-    font-size:calc(var(--font-size) - calc(var(--font-size)/5));
+    font-family: "IBM", sans-serif;
+    font-size: calc(var(--font-size) - calc(var(--font-size)/8));
 }
 a svg{
     width: calc(var(--font-size) - calc(var(--font-size)/2.5));
