@@ -19,6 +19,11 @@
         --font-size: 50px
     }
 }
+@font-face{
+    font-family: "Arrows";
+        src: url(/assets/fonts/Arrows.ttf) format("truetype");
+    font-style: normal;
+}
 
 body{
   font-family: "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
@@ -64,11 +69,10 @@ a #text{
     border-bottom-width: var(--underline); 
 }
 a #arrow{
-    font-family:sans-serif; 
+    font-family: "Arrows", sans-serif;
     font-weight:bolder; 
-    font-size:calc(var(--font-size) - calc(var(--font-size)/8));
+    font-size:calc(var(--font-size) - calc(var(--font-size)/5));
 }
-
 a svg{
     width: calc(var(--font-size) - calc(var(--font-size)/2.5));
     height: auto;
