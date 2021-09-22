@@ -63,6 +63,12 @@ a #text{
     border-bottom-style: solid;
     border-bottom-width: var(--underline); 
 }
+a #arrow{
+    font-family:sans-serif; 
+    font-weight:bolder; 
+    font-size:calc(var(--font-size) - calc(var(--font-size)/8));
+}
+
 a svg{
     width: calc(var(--font-size) - calc(var(--font-size)/2.5));
     height: auto;
