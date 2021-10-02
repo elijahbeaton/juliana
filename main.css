@@ -20,8 +20,8 @@
     }
 }
 @font-face{
-    font-family: "IBM";
-        src: url(/assets/fonts/IBMPlexSans-Light.woff) format("woff");
+    font-family: "Arrows";
+        src: url(assets/fonts/Arrows.ttf) format("truetype");
     font-style: normal;
 }
 
@@ -69,8 +69,8 @@ a #text{
     border-bottom-width: var(--underline); 
 }
 a #arrow{
-    font-family: "IBM", sans-serif;
-    font-size: calc(var(--font-size) - calc(var(--font-size)/8));
+    font-family: "Arrows", sans-serif, system-ui;
+    font-size: calc(var(--font-size) - calc(var(--font-size)/4));
 }
 a svg{
     width: calc(var(--font-size) - calc(var(--font-size)/2.5));
