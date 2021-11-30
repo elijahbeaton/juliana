@@ -23,10 +23,24 @@
     font-family: "Arrows";
         src: url(assets/fonts/Arrows.ttf) format("truetype");
     font-style: normal;
+    unicode-range: U+2190-2199;
+}
+@font-face {
+    font-family: "TeXGyreTermes";
+    src: url(/assets/fonts/texgyretermes-italic.woff2) format("woff2"),
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "TeXGyreTermes";
+    src: url(/assets/fonts/texgyretermes-regular.woff2) format("woff2"),
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
-  font-family: "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
+  font-family: "Arrows", "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
   color: var(--foreground);
   font-weight: normal;
   letter-spacing: -0.15rem;
@@ -69,13 +83,7 @@ a #text{
     border-bottom-width: var(--underline); 
 }
 a #arrow{
-    font-family: "Arrows", sans-serif, system-ui;
-    font-size: calc(var(--font-size) - calc(var(--font-size)/4));
-}
-a svg{
-    width: calc(var(--font-size) - calc(var(--font-size)/2.5));
-    height: auto;
-    fill: currentcolor;
+    font-size: 75%;
 }
 
 @-webkit-keyframes FadeIn {
