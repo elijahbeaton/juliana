@@ -1,30 +1,26 @@
 :root{
     --background: #e7e7e7;
-    --foreground: #434343;
+    --foreground: #000000;
     --hightlight: #003399;
-    --font-size: 60px;
-    --underline: calc(var(--font-size) * 0.06)
+    --font: calc(1rem + 2vw);
 }
 
 
 @media (prefers-color-scheme: dark){
          :root{
-         --background: #121211;
+         --background: #000000;
          --foreground: #FFFFFF;
          --hightlight: #7D9EE1;
      }
 }
-@media (max-width: 1100px){
-    :root{
-        --font-size: 50px
-    }
-}
+
 @font-face{
     font-family: "Arrows";
         src: url(assets/fonts/Arrows.ttf) format("truetype");
     font-style: normal;
     unicode-range: U+2190-2199;
 }
+
 @font-face {
     font-family: "TeXGyreTermes";
     src: url(/assets/fonts/texgyretermes-italic.woff2) format("woff2"),
@@ -40,55 +36,49 @@
 }
 
 body{
-  font-family: "Arrows", "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif, sans-serif;
-  color: var(--foreground);
-  font-weight: normal;
-  letter-spacing: -0.15rem;
-  background: var(--background);
-  font-size: var(--font-size);
-  max-width: 90%;
-  width: 1000px;
-  margin: 0 auto;
+    font-family: "Arrows", "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
+    color: var(--foreground);
+    background: var(--background);
+    letter-spacing: calc(-0.01rem + -0.1vw);
+    font-size: var(--font);
+    width: 60%;
+    margin: 0 5vw;
 }
-.landing{
-    height: 80vh;
-    margin-top: 10vh;
-    margin-bottom: 6vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: .003;
-    -webkit-animation: FadeIn 1.3s forwards;
-    animation: FadeIn 1.3s forwards;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+.arrow{
+    font-size: 75%;
 }
-#cv p, ul{
-    margin: 20px auto;
-    opacity: .003;
-    -webkit-animation: FadeIn 1.3s forwards;
-    animation: FadeIn 1.3s forwards;
+header{
+    opacity: 0;
+    -webkit-animation: FadeIn 1s forwards;
+    animation: FadeIn 1s forwards;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+section{
+    opacity: 0;
+    padding: 10px 0;
+    -webkit-animation: FadeIn 1s forwards;
+    animation: FadeIn 1s forwards;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
-a {
+a{
     color: var(--hightlight);
-    border-bottom: none;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
 }
-a #text{
-    white-space: nowrap;
-    border-bottom-style: solid;
-    border-bottom-width: var(--underline); 
-}
-a #arrow{
-    font-size: 75%;
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 2.5vw;
+    }
 }
 
 @-webkit-keyframes FadeIn {
     0% {
-        opacity:.003
+        opacity:0
     }
 
     to {
@@ -98,7 +88,7 @@ a #arrow{
 
 @keyframes FadeIn {
     0% {
-        opacity:.003
+        opacity:0
     }
 
     to {
