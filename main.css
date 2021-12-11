@@ -1,17 +1,15 @@
 :root{
     --background: #e7e7e7;
     --foreground: #000000;
-    --hightlight: #003399;
-    --font: calc(1rem + 2vw);
+    --font: calc(1rem + 1.5vw);
 }
 
 
 @media (prefers-color-scheme: dark){
-         :root{
-         --background: #000000;
-         --foreground: #FFFFFF;
-         --hightlight: #7D9EE1;
-     }
+    :root{
+        --background: #000000;
+        --foreground: #FFFFFF;
+    }
 }
 
 @font-face{
@@ -39,7 +37,7 @@ body{
     font-family: "Arrows", "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
     color: var(--foreground);
     background: var(--background);
-    letter-spacing: calc(-0.01rem + -0.1vw);
+    letter-spacing: -0.1vw;
     font-size: var(--font);
     width: 60%;
     margin: 0 5vw;
@@ -48,6 +46,7 @@ body{
     font-size: 75%;
 }
 header{
+    padding: 5vh 0;
     opacity: 0;
     -webkit-animation: FadeIn 1s forwards;
     animation: FadeIn 1s forwards;
@@ -56,7 +55,7 @@ header{
 }
 section{
     opacity: 0;
-    padding: 10px 0;
+    padding: 5vh 0;
     -webkit-animation: FadeIn 1s forwards;
     animation: FadeIn 1s forwards;
     -webkit-animation-delay: 0.5s;
@@ -64,9 +63,12 @@ section{
 }
 
 a{
-    color: var(--hightlight);
+    color: var(--foreground);
     text-decoration: underline;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-thickness: 0.1rem;
+}
+a:hover{
+    text-decoration-style: wavy;
 }
 
 @media (max-width: 600px) {
