@@ -1,7 +1,7 @@
 :root{
     --background: rgba(231, 231, 231, 0.2);
     --foreground: #000000;
-    --font: calc(1rem + 1.5vw);
+    --font: calc(1rem + 1vw);
 }
 
 
@@ -30,7 +30,7 @@ body{
     font-family: "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
     color: var(--foreground);
     background: var(--background);
-    letter-spacing: -0.1vw;
+    letter-spacing: -0.05vw;
     font-size: var(--font);
     width: 60%;
     margin: 0 5vw;
@@ -58,6 +58,7 @@ section{
 a{
     color: var(--foreground);
     text-decoration: underline;
+    text-underline-offset: 0.2rem;
     text-decoration-thickness: 0.1rem;
 }
 a:hover{
@@ -67,7 +68,7 @@ a:hover{
 li{
     list-style: "–  "
 }
-
+ 
 @media (max-width: 600px) {
     :root{
         --font: calc(1rem + 4vw);
