@@ -12,13 +12,6 @@
     }
 }
 
-@font-face{
-    font-family: "Arrows";
-        src: url(assets/fonts/Arrows.ttf) format("truetype");
-    font-style: normal;
-    unicode-range: U+2190-2199;
-}
-
 @font-face {
     font-family: "TeXGyreTermes";
     src: url(/assets/fonts/texgyretermes-italic.woff2) format("woff2"),
@@ -34,7 +27,7 @@
 }
 
 body{
-    font-family: "Arrows", "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
+    font-family: "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
     color: var(--foreground);
     background: var(--background);
     letter-spacing: -0.1vw;
