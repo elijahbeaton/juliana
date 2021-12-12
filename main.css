@@ -74,6 +74,11 @@ li{
         margin: 2.5vw;
     }
 }
+@media (hover: none) {
+    a:hover{
+        text-decoration-style: solid;
+    }
+}
 
 @-webkit-keyframes FadeIn {
     0% {
