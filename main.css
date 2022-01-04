@@ -27,7 +27,7 @@
 }
 
 body{
-    font-family: "TeXGyreTermes", "Times New Roman", "TimesNewRoman", "Times", serif;
+    font-family: "Times New Roman", "TimesNewRoman", "TeXGyreTermes", "Times", serif;
     color: var(--foreground);
     background: var(--background);
     letter-spacing: -0.05vw;
