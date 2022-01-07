@@ -1,7 +1,6 @@
 :root{
     --background: rgba(231, 231, 231, 0.2);
     --foreground: #000000;
-    --font: calc(1rem + 1vw);
 }
 
 
@@ -31,28 +30,12 @@ body{
     color: var(--foreground);
     background: var(--background);
     letter-spacing: -0.05vw;
-    font-size: var(--font);
+    font-size: 2rem;
+    font-size: calc(1rem + 1vw);
     width: 60%;
-    margin: 0 5vw;
-}
-.arrow{
-    font-size: 75%;
-}
-header{
-    padding: 5vh 0;
+    padding: 5vh 5vw;
     opacity: 0;
-    -webkit-animation: FadeIn 1s forwards;
-    animation: FadeIn 1s forwards;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
-}
-section{
-    opacity: 0;
-    padding: 5vh 0;
-    -webkit-animation: FadeIn 1s forwards;
-    animation: FadeIn 1s forwards;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    animation: FadeIn 2s cubic-bezier(0.5, 1, 1, 1) forwards;
 }
 
 a{
@@ -69,13 +52,12 @@ li{
     list-style: "–  "
 }
  
-@media (max-width: 600px) {
-    :root{
-        --font: calc(1rem + 4vw);
-    }
+@media (max-width: 600px){
     body {
         width: 96%;
         margin: 0 auto;
+        padding: 0;
+        font-size: calc(1rem + 4vw);
     }
 }
 @media (hover: none) {
@@ -84,22 +66,12 @@ li{
     }
 }
 
-@-webkit-keyframes FadeIn {
-    0% {
-        opacity:0
-    }
-
-    to {
-        opacity:1
-    }
-}
-
 @keyframes FadeIn {
     0% {
-        opacity:0
+        opacity:0;
     }
 
     to {
-        opacity:1
+        opacity:1;
     }
 }
