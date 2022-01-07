@@ -35,7 +35,7 @@ body{
     width: 60%;
     padding: 5vh 5vw;
     opacity: 0;
-    animation: FadeIn 2s cubic-bezier(0.75, 0.2, 1, 1) forwards;
+    animation: FadeIn 1s cubic-bezier(0.75, 0.2, 1, 1) forwards;
 }
 
 a{
