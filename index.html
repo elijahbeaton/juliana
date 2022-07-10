@@ -14,88 +14,114 @@
   <meta name="description" content="Juliana True Jones-Beaton is an academic, writer, and doctoral student studying English at the University of Delaware.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Juliana True Jones-Beaton</title>
-  <style>@font-face {
-    font-family: "TeXGyreTermes";
-    src: url(/assets/fonts/texgyretermes-italic.woff2) format("woff2");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "TeXGyreTermes";
-    src: url(/assets/fonts/texgyretermes-regular.woff2) format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body{
-    font-family: "Times New Roman", "TimesNewRoman", "TeXGyreTermes", "Times", serif;
-    color: black;
-    background: rgba(231, 231, 231, 0.2);
-    letter-spacing: -0.05vw;
-    font-size: 1.5rem;
-    font-size: calc(1rem + 1vw);
-    width: 60%;
-    padding: 5vh 5vw;
-    opacity: 0;
-    animation: FadeIn 1s cubic-bezier(0.75, 0.2, 1, 1) forwards;
-}
-
-a{
-    color: black;
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-    text-decoration-thickness: 0.1rem;
-}
-a:hover{
-    text-decoration-style: wavy;
-}
-
-li{
-    list-style: "–  "
-}
-
-@media (prefers-color-scheme: dark){
-    body, a{
-        background: black;
+  <style>
+    @font-face {
+        font-family: "Redaction";
+        src: url(./fonts/Redaction35-Italic.woff2) format("woff2");
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: "Redaction";
+        src: url(./fonts/Redaction35-Regular.woff2) format("woff2");
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Redaction";
+        src: url(./fonts/Redaction35-Bold.woff2) format("woff2");
+        font-weight: bold;
+        font-style: normal;
+    }
+    ::selection {
         color: white;
+        background-color: blue;
     }
-}
- 
-@media (max-width: 600px){
-    body {
-        width: 96%;
-        margin: 0 auto;
-        padding: 0;
-        font-size: calc(1rem + 4vw);
+    html{
+        font-size: calc(0.5vw + 26px);
     }
-}
-@media (hover: none) {
+        
+    body{
+        font-family: "Redaction", "Times New Roman", TimesNewRoman, "Times", serif;
+        color: #1D1D1D;
+        background: whitesmoke;
+        max-width: 1000px;
+        margin: calc(2vw + 0.5rem);
+    }
+    h1{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    h1 + p{
+        margin-top: 0;
+    }
+    h2{
+        font-size: calc(0.5vw + 26px);
+        font-weight: normal;
+        padding: 0.5rem 0;
+        border-top: dotted 2.5px;
+        margin-top: 2rem;
+    }
+    h2::before{
+        content: "¶ ";
+    }
+    body > *{
+        animation: FadeIn 1s forwards;
+    }
+    a{
+        color: #1D1D1D;
+        text-decoration: underline;
+        text-decoration-thickness: 2.5px;
+        text-decoration-style: dotted;
+        text-underline-offset: 0.1rem;
+    }
     a:hover{
+        color: white;
         text-decoration-style: solid;
+        background-color: blue;
     }
-}
+    hr{
+        border: none;
+        border-top: dotted 2.5px;
+    }
+    li{
+        list-style: "–  "
+    }
+    
+    @media (prefers-color-scheme: dark){
+        body, a{
+            background: #0C0C0C;
+            color: whitesmoke;
+        }
+    }
+    @media (hover: none) {
+        a:hover{
+            text-decoration-style: solid;
+        }
+    }
 
-@keyframes FadeIn {
-    0% {
-        opacity:0;
-    }
+    @keyframes FadeIn {
+        0% {
+            opacity:0;
+            padding-top: 40px
+        }
 
-    to {
-        opacity:1;
+        to {
+            opacity:1;
+        }
     }
-}
 </style>
 </head>
   <body>
-    <p><em>Juliana True Jones-Beaton</em><br>
-      is an <a href="https://juliana.beaton.page/assets/Juliana%20True%20Jones-Beaton%20CV.pdf">academic</a>, <a href="https://twitter.com/JulianaTrueJB">writer</a>, and <a href="https://www.english.udel.edu/people/jtrue">doctoral student</a> studying English at the University of Delaware.</p>
+    <h1><em>Juliana True Jones-Beaton</em></h1>
+      <p>is an <a href="https://juliana.beaton.page/assets/Juliana%20True%20Jones-Beaton%20CV.pdf">academic</a>, <a href="https://twitter.com/JulianaTrueJB">writer</a>, and <a href="https://www.english.udel.edu/people/jtrue">doctoral student</a> studying English at the University of Delaware.</p>
     
-    <p>She wrote her M.Arts thesis on gender, genre, and disability in Sylvia Plath's letters and journals. Her research primarily deals with the intersection of disability and gender in twentieth-century American literature and film.</p>
+    <p>She wrote her M.Arts thesis on gender, genre, and disability in Sylvia Plath's letters and journals. Her research deals with technology, artificial intellegence, and bodies in speculative fiction after 1989.</p>
     <br>
-    <br>
-    <hr>
+    
+<!-- Education -->
 
+    <h2>Education</h2>
     <p><em>Ph.D. in English</em><br>
     University of Delaware, August 2021—Present</p>
 
@@ -107,24 +133,19 @@ li{
     Mississippi State University, August 2016—May 2019<br>
     Summa Cum Laude</p>
 
-    <hr>
+<!-- Publications -->
 
-    <p><em>Teaching Assistant for Dr. Ed Larkin, English 150: Human Will in Fantasy Worlds</em><br>
+    <h2>Publications</h2>
+    <p>“The Window is the World: Loneliness in <i>Klara and the Sun</i>.”<br><i>Ampersand: An American Studies Journal</i>, vol. 3, Boston University, Forthcoming – Summer 2022.</p>
+
+<!-- Teaching -->
+
+    <h2>Teaching</h2>
+    
+    <p><em>Instructor of Record, English 110: Freshman Composition</em><br>
     Department of English, University of Delaware<br>
-    Spring 2022</p>
-
-    <p><em>Teaching Assistant for Dr. Christine Cucciarre, English 110: Seminar in Composition</em><br>
-    Department of English, University of Delaware<br>
-    Fall 2021</p>
-
-    <p><em>Writing Tutor</em><br>
-    The Writing Center, University of Delaware<br>
-    Fall 2021—Spring 2022</p>
-
-    <p><em>Research Assistant for Dr. Elizabeth Miller</em><br>
-    Department of English, Mississippi State University<br>
-    Spring 2021</p>
-
+    Fall 2022</p>
+    
     <p><em>Instructor of Record, English 1113: Composition 2</em><br>
     Department of English, Mississippi State University<br>
     Spring 2021</p>
@@ -132,6 +153,66 @@ li{
     <p><em>Instructor of Record, English 1103: Composition 1</em><br>
     Department of English, Mississippi State University<br>
     Fall 2020</p>
+    
+    <p><em>Teaching Assistant for Dr. Ed Larkin, English 150: Human Will in Fantasy Worlds</em><br>
+    Department of English, University of Delaware<br>
+    Spring 2022</p>
+
+    <p><em>Teaching Assistant for Dr. Christine Cucciarre, English 110: Seminar in Composition</em><br>
+    Department of English, University of Delaware<br>
+    Fall 2021</p>
+    
+<!-- Research -->
+    
+    <h2>Research Positions</h2>
+    
+     <p><em>Research Assistant for Dr. Keerthi Potluri</em><br>
+    Department of English, University of Delaware<br>
+    2022–2023</p>
+    
+     <p><em>Independent Fact-Checker</em><br>
+    <a href="https://www.atlantamagazine.com">Atlanta Magazine</a><br>
+    2021–Present</p>
+    
+     <p><em>Research Assistant for Dr. Elizabeth Miller</em><br>
+    Department of English, Mississippi State University<br>
+    2021</p>
+    
+<!-- Conferences -->
+    
+    <h2>Conferences</h2>
+    
+    <p>“Surveillance is the New Sexy: Gentrifying the Panopticon in <i>The Heart Goes Last</i>”<br>
+    <em>Pacific Ancient and Modern Language Association,</em><br>
+    November 2022</p>
+    
+    <p>“Forgetful Futures: Memory and Disability in <i>Westworld</i> and <i>Blade Runner</i>”<br>
+    <em>Midwest Modern Language Association,</em><br>
+    November 2022</p>
+    
+    <p>“The Apparatus: Foucault, Althusser, and the Prison of Amazon”<br>
+    <em>Paul Lucas Graduate Conference,</em><br>
+    March 2022</p>
+    
+    <p>“Seeing Disability in Film Noir: Masculinity and Metaphors of Bodies”<br>
+    <em>International Conference on Film Studies,</em><br>
+    February 2022</p>
+
+    <p>“‘Nobody Cares for a Letter’: Subverting the Epistolary with Epistle in Austen’s Emma”<br>
+    <em>International Conference on Narrative</em><br>
+    May 2021</p>
+
+    <p>“Social Media Wizards and the Golden Tweet”<br>
+    <em>Southeastern Writing Center Association</em><br>
+    March 2020</p>
+    
+<!-- Tutoring -->
+    
+    <h2>Tutoring</h2>
+
+    <p><em>Writing Tutor</em><br>
+    The Writing Center, University of Delaware<br>
+    Fall 2021—Spring 2022</p>
 
     <p><em>Writing Tutor</em><br>
     The Writing Center, Mississippi State University<br>
@@ -140,6 +221,15 @@ li{
     <p><em>Technical Writing Tutor/Editor</em><br>
     Bagley College of Engineering, Mississippi State University<br>
     Fall 2018—Spring 2019</p>
+
+<!-- Content -->
+
+    <h2>Production</h2>
+    
+    <p><em>Social Media Manager</em><br>
+    The Writing Center, Mississippi State University<br>
+    Fall 2019–Spring 2020</p>
+
 
     <p><em>Stage Manager</em><br>
     Theatre MSU, Mississippi State University
@@ -156,21 +246,9 @@ li{
     Theatre MSU, Mississippi State University<br>
     All productions from Fall 2016 to 2020</p>
 
-    <hr>
+<!-- Honors -->
 
-    <p>“Seeing Disability in Film Noir: Masculinity and Metaphors of Bodies”<br>
-    <em>International Conference on Film Studies</em><br>
-    February 2022</p>
-
-    <p>“‘Nobody Cares for a Letter’: Subverting the Epistolary with Epistle in Austen’s Emma”<br>
-    <em>International Conference on Narrative</em><br>
-    May 2021</p>
-
-    <p>“Social Media Wizards and the Golden Tweet”<br>
-    <em>Southeastern Writing Center Association</em><br>
-    March 2020</p>
-
-    <hr>
+    <h2>Honors</h2>
 
     <p><em>Phi Beta Kappa</em><br>
     (Inducted Spring of 2019)</p>
@@ -184,7 +262,15 @@ li{
     <p><em>Dean’s List</em><br>
     Fall 2016</p>
 
-    <hr>
+<!-- Skills -->
+    <h2>Skills</h2>
 
     <p>Proficient in Spanish—4 semesters at the college level</p>
+    
+    <p>Social Media Management</p>
+    
+    <p>Theatre and Portrait Photography</p>
+    
+    <p>Photo Editing</p>
+    
 </body>
