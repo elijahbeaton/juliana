@@ -16,39 +16,37 @@
   <title>Juliana True Jones-Beaton</title>
   <style>
     @font-face {
-        font-family: "IBM Plex";
-        src: url("./fonts/IBMPlexSerif-LightItalic.woff2") format("woff2");
-             url("./fonts/IBMPlexSerif-LightItalic.woff") format("woff");
+        font-family: "Redaction";
+        src: url(./fonts/Redaction20-Italic.woff2) format("woff2");
         font-weight: normal;
         font-style: italic;
     }
     @font-face {
-        font-family: "IBM Plex";
-        src: url("./fonts/IBMPlexSerif-Light.woff2") format("woff2");
-             url("./fonts/IBMPlexSerif-Light.woff") format("woff");
+        font-family: "Redaction";
+        src: url(./fonts/Redaction20-Regular.woff2) format("woff2");
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
-        font-family: "IBM Plex";
-        src: url("./fonts/IBMPlexSerif-SemiBold.woff2") format("woff2");
-             url("./fonts/IBMPlexSerif-SemiBold.woff") format("woff");
+        font-family: "Redaction";
+        src: url(./fonts/Redaction20-Bold.woff2) format("woff2");
         font-weight: bold;
         font-style: normal;
     }
     ::selection {
-        color: whitesmoke;
+        color: white;
         background-color: blue;
     }
     html{
-        font-size: calc(0.5vw + 24px);
+        font-size: calc(0.5vw + 26px);
     }
         
     body{
-        font-family: "IBM Plex", "Times New Roman", TimesNewRoman, "Times", serif;
-        color: blue;
+        font-family: "Redaction", "Times New Roman", TimesNewRoman, "Times", serif;
+        color: #1D1D1D;
         background: whitesmoke;
-        margin: 1rem;
+        max-width: 1000px;
+        margin: calc(2vw + 0.5rem);
     }
     h1{
         font-size: 1rem;
@@ -58,7 +56,7 @@
         margin-top: 0;
     }
     h2{
-        font-size: inherit;
+        font-size: calc(0.5vw + 26px);
         font-weight: normal;
         padding: 0.5rem 0;
         border-top: dotted 2.5px;
@@ -71,7 +69,7 @@
         animation: FadeIn 1s forwards;
     }
     a{
-        color: blue;
+        color: #1D1D1D;
         text-decoration: underline;
         text-decoration-thickness: 2.5px;
         text-decoration-style: dotted;
@@ -91,17 +89,9 @@
     }
     
     @media (prefers-color-scheme: dark){
-        ::selection {
-            color: navy;
-            background-color: white;
-        }
         body, a{
-            background: navy;
+            background: #0C0C0C;
             color: whitesmoke;
-        }
-        a:hover{
-            background-color: whitesmoke;
-            color: navy;
         }
     }
     @media (hover: none) {
@@ -113,8 +103,7 @@
     @keyframes FadeIn {
         0% {
             opacity:0;
-            padding-top: 0.5rem;
-            transform: translateX(-0.5rem);
+            padding-top: 40px
         }
 
         to {
@@ -128,6 +117,7 @@
       <p>is an <a href="https://juliana.beaton.page/assets/Juliana%20True%20Jones-Beaton%20CV.pdf">academic</a>, <a href="https://twitter.com/JulianaTrueJB">writer</a>, and <a href="https://www.english.udel.edu/people/jtrue">doctoral student</a> studying English at the University of Delaware.</p>
     
     <p>She wrote her M.Arts thesis on gender, genre, and disability in Sylvia Plath's letters and journals. Her research deals with technology, artificial intellegence, and bodies in speculative fiction after 1989.</p>
+    <br>
     
 <!-- Education -->
 
